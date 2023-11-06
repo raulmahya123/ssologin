@@ -1,4 +1,4 @@
-module raulmahya123.github.io/ssologin
+module github.com/raulmahya123/ssologin
 
 go 1.19
 
