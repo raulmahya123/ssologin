@@ -30,7 +30,7 @@ func Post(w http.ResponseWriter, r *http.Request) {
 			dt := &wa.TextMessage{
 				To:       msg.Phone_number,
 				IsGroup:  false,
-				Messages: "Hai hai hai kak " + msg.Alias_name + fmt.Sprintf("%f", msg.Longitude) + fmt.Sprintf("%f", msg.Latitude) + msg.Message,
+				Messages: "Hai hai hai kak " + "ini link Youtube aku jgn lupa di liat yaakk https://www.youtube.com/watch?v=9bXr-fGZV9w&feature=youtu.be&ab_channel=ANAKINFORMATIKA" + msg.Alias_name + fmt.Sprintf("%f", msg.Longitude) + fmt.Sprintf("%f", msg.Latitude) + msg.Message,
 			}
 			resp, _ = atapi.PostStructWithToken[atmessage.Response]("Token", os.Getenv("TOKEN"), dt, "https://api.wa.my.id/api/send/message/text")
 		}
